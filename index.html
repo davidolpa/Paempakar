@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PaEmpakar – Empaques personalizados que dan valor a tu marca</title>
+  <meta name="description" content="Bolsas kraft, cajas plegadizas y portacomidas ecológicos personalizados desde bajas cantidades. Entrega en 3 días hábiles. Bogotá, Colombia." />
+  <meta name="keywords" content="empaques personalizados, bolsas kraft, cajas plegadizas, empaques ecológicos, paempakar, bogotá" />
+  <meta property="og:title" content="PaEmpakar – Empaques que dan valor a tu marca" />
+  <meta property="og:description" content="Bolsas kraft, cajas y portacomidas ecológicos personalizados. Entrega en 3 días hábiles." />
+  <meta property="og:url" content="https://paempakar.com" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://paempakar.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #0d0718; color: #fff; line-height: 1.6; }
+
+    /* NAV */
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(13,7,24,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px; text-decoration: none; }
+    .nav-logo .pa { color: #fff; }
+    .nav-logo .em { color: #e040a0; }
+    .nav-logo .ak { color: #f5c842; }
+    .nav-logo .ar { color: #fff; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+    .nav-links a:hover { color: #fff; }
+    .nav-wa { background: #25d366; color: #fff; padding: 0.5rem 1.2rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 6px; transition: opacity 0.2s; }
+    .nav-wa:hover { opacity: 0.9; }
+
+    /* HERO */
+    .hero { min-height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 5rem 1.5rem 4rem; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(180,40,140,0.22) 0%, transparent 70%); pointer-events: none; }
+    .hero::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 40% at 80% 20%, rgba(124,58,237,0.18) 0%, transparent 60%); pointer-events: none; }
+    .hero-content { position: relative; z-index: 1; max-width: 680px; }
+    .hero-eyebrow { display: inline-block; font-size: 0.72rem; letter-spacing: 3px; text-transform: uppercase; color: #e040a0; margin-bottom: 1.2rem; padding: 0.35rem 1rem; border: 1px solid rgba(224,64,160,0.3); border-radius: 50px; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.15; margin-bottom: 1rem; }
+    .hero h1 em { color: #e040a0; font-style: normal; }
+    .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.7); margin-bottom: 2.2rem; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .hero-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: #25d366; color: #fff; font-weight: 700; font-size: 1rem; padding: 0.9rem 2rem; border-radius: 50px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; box-shadow: 0 4px 24px rgba(37,211,102,0.3); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(37,211,102,0.4); }
+    .btn-secondary { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: #fff; font-weight: 600; font-size: 1rem; padding: 0.9rem 2rem; border-radius: 50px; border: 1.5px solid rgba(255,255,255,0.3); text-decoration: none; transition: border-color 0.2s, background 0.2s; }
+    .btn-secondary:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.05); }
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 2.5rem; }
+    .hero-badge { display: flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; padding: 0.35rem 0.9rem; font-size: 0.78rem; color: rgba(255,255,255,0.8); }
+    .hero-badge svg { width: 14px; height: 14px; color: #25d366; flex-shrink: 0; }
+
+    /* SECTIONS */
+    section { padding: 5rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .section-label { font-size: 0.72rem; letter-spacing: 3px; text-transform: uppercase; color: #e040a0; margin-bottom: 0.75rem; display: block; }
+    .section-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 0.5rem; }
+    .section-sub { color: rgba(255,255,255,0.6); font-size: 1rem; margin-bottom: 2.5rem; max-width: 520px; }
+
+    /* PRODUCTS */
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .product-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 1.4rem; transition: border-color 0.2s, background 0.2s, transform 0.2s; cursor: default; }
+    .product-card:hover { border-color: rgba(224,64,160,0.5); background: rgba(224,64,160,0.06); transform: translateY(-3px); }
+    .product-icon { font-size: 2rem; margin-bottom: 0.75rem; display: block; }
+    .product-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem; }
+    .product-card p { font-size: 0.83rem; color: rgba(255,255,255,0.55); }
+
+    /* STEPS */
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; position: relative; }
+    .step-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 1.8rem 1.4rem; text-align: center; }
+    .step-num { width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #7c3aed, #e040a0); color: #fff; font-weight: 800; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; }
+    .step-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.4rem; }
+    .step-card p { font-size: 0.85rem; color: rgba(255,255,255,0.55); }
+
+    /* TRUST */
+    .trust-bar { background: rgba(255,255,255,0.03); border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); padding: 2.5rem 1.5rem; }
+    .trust-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; text-align: center; }
+    .trust-stat .num { font-size: 2.4rem; font-weight: 800; color: #e040a0; display: block; }
+    .trust-stat .lbl { font-size: 0.85rem; color: rgba(255,255,255,0.55); }
+
+    /* WHO */
+    .who-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+    .who-tag { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; padding: 0.45rem 1.1rem; font-size: 0.85rem; color: rgba(255,255,255,0.8); }
+
+    /* VS TABLE */
+    .vs-table { width: 100%; border-collapse: collapse; border-radius: 16px; overflow: hidden; }
+    .vs-table th { padding: 1rem; font-size: 0.9rem; font-weight: 700; }
+    .vs-table th:first-child { background: transparent; text-align: left; color: rgba(255,255,255,0.5); }
+    .vs-table th.us { background: linear-gradient(135deg, #7c3aed22, #e040a022); color: #e040a0; }
+    .vs-table th.them { background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.4); }
+    .vs-table td { padding: 0.9rem 1rem; font-size: 0.88rem; border-top: 1px solid rgba(255,255,255,0.07); }
+    .vs-table td:first-child { color: rgba(255,255,255,0.6); }
+    .vs-table td.yes { color: #25d366; font-weight: 600; text-align: center; }
+    .vs-table td.no { color: rgba(255,255,255,0.25); text-align: center; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; }
+    .faq-q { width: 100%; background: none; border: none; color: #fff; font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; padding: 1.1rem 1.3rem; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+    .faq-q:hover { background: rgba(255,255,255,0.03); }
+    .faq-q .arrow { flex-shrink: 0; transition: transform 0.3s; font-size: 1.1rem; color: #e040a0; }
+    .faq-q.open .arrow { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-a p { padding: 0 1.3rem 1.1rem; font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.7; }
+
+    /* CTA FINAL */
+    .cta-final { background: linear-gradient(135deg, #2d1454, #4a0e3a); border-radius: 24px; padding: 4rem 2rem; text-align: center; margin: 0 1.5rem 4rem; }
+    .cta-final h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 0.75rem; }
+    .cta-final p { color: rgba(255,255,255,0.7); margin-bottom: 2rem; font-size: 1rem; }
+    .cta-phones { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    /* FOOTER */
+    footer { border-top: 1px solid rgba(255,255,255,0.08); padding: 2.5rem 1.5rem; max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+    .footer-logo { font-size: 1.3rem; font-weight: 800; }
+    footer p { font-size: 0.8rem; color: rgba(255,255,255,0.35); }
+    .footer-contact { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+    .footer-contact a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+    .footer-contact a:hover { color: #fff; }
+
+    /* WA FLOAT */
+    .wa-float { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 999; display: flex; flex-direction: column; gap: 10px; align-items: flex-end; }
+    .wa-float a { display: flex; align-items: center; gap: 8px; background: #25d366; color: #fff; font-weight: 600; font-size: 0.85rem; padding: 0.65rem 1.2rem; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: transform 0.15s; }
+    .wa-float a:hover { transform: scale(1.05); }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hero { min-height: 80vh; }
+      footer { flex-direction: column; align-items: flex-start; }
+      .footer-contact { align-items: flex-start; }
+    }
+
+    /* WHATSAPP SVG ICON */
+    .wa-icon { width: 18px; height: 18px; fill: #fff; display: inline-block; vertical-align: middle; }
+    .check-icon { width: 14px; height: 14px; stroke: #25d366; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <span class="pa">Pa</span><span class="em">Em</span><span class="ak">pa</span><span class="ar">kar</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#como-funciona">Cómo funciona</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="nav-wa" href="https://wa.me/573008718152" target="_blank" rel="noopener">
+      <svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.532 5.862L0 24l6.29-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.655-.498-5.189-1.369L2 22l1.41-4.687A9.948 9.948 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Escríbenos
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-eyebrow">🔥 Empaques que dan valor a tu marca 🔥</span>
+      <h1>Empaques <em>personalizados</em> que hacen brillar tu producto</h1>
+      <p class="hero-sub">Bolsas kraft, cajas y portacomidas ecológicos desde bajas cantidades. Entrega en 3 días hábiles en toda Colombia.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="https://wa.me/573008718152" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.532 5.862L0 24l6.29-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.655-.498-5.189-1.369L2 22l1.41-4.687A9.948 9.948 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Ver catálogo por WhatsApp
+        </a>
+        <a class="btn-secondary" href="#productos">Ver productos ↓</a>
+      </div>
+      <div class="hero-badges">
+        <span class="hero-badge"><svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Materiales 100% ecológicos</span>
+        <span class="hero-badge"><svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Entrega en 3 días hábiles</span>
+        <span class="hero-badge"><svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Bajos mínimos de producción</span>
+        <span class="hero-badge"><svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Impresión full color</span>
+        <span class="hero-badge"><svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Aptos para alimentos</span>
+        <span class="hero-badge"><svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Sin costos ocultos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-inner">
+      <div class="trust-stat"><span class="num">+500</span><span class="lbl">Clientes satisfechos</span></div>
+      <div class="trust-stat"><span class="num">8</span><span class="lbl">Líneas de producto</span></div>
+      <div class="trust-stat"><span class="num">3</span><span class="lbl">Días hábiles de entrega</span></div>
+      <div class="trust-stat"><span class="num">100%</span><span class="lbl">Materiales ecológicos</span></div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section id="productos">
+    <span class="section-label">Portafolio</span>
+    <h2 class="section-title">Nuestros productos</h2>
+    <p class="section-sub">Línea completa de empaques ecológicos personalizables para todo tipo de negocio.</p>
+    <div class="products-grid">
+      <div class="product-card"><span class="product-icon">🛍️</span><h3>Bolsas kraft</h3><p>Manija rizada (5 tamaños), manija plana (4 tamaños) y para botella (1 a 4 botellas). Resistentes, ecológicas y versátiles.</p></div>
+      <div class="product-card"><span class="product-icon">📦</span><h3>Cajas plegadizas</h3><p>Diseñadas para todo tipo de producto. 100% personalizables, full color y aptas para contacto con alimentos.</p></div>
+      <div class="product-card"><span class="product-icon">🍱</span><h3>Portacomidas biodegradables</h3><p>La opción perfecta para restaurantes y delivery. Certificadas para contacto directo con alimentos.</p></div>
+      <div class="product-card"><span class="product-icon">🍕</span><h3>Cajas para pizza</h3><p>Varios tamaños disponibles, 100% personalizables con tu logo y diseño de marca.</p></div>
+      <div class="product-card"><span class="product-icon">📫</span><h3>Cajas microcorrugadas</h3><p>Alta resistencia para envíos y e-commerce. Ecológicas y disponibles en diferentes tamaños.</p></div>
+      <div class="product-card"><span class="product-icon">🪟</span><h3>Cajas con ventana</h3><p>Exhibe tu producto mientras lo proteges. Ideales para dulces, ropa y accesorios.</p></div>
+      <div class="product-card"><span class="product-icon">👜</span><h3>Cajas con manija</h3><p>Elegantes y funcionales. Perfectas para tiendas boutique y regalos corporativos.</p></div>
+      <div class="product-card"><span class="product-icon">🎁</span><h3>Cajas rígidas</h3><p>Presentación premium para productos de alto valor. Acabados que impactan desde el primer momento.</p></div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section id="como-funciona">
+    <span class="section-label">Proceso</span>
+    <h2 class="section-title">Así de fácil es pedir</h2>
+    <p class="section-sub">En solo 3 pasos tendrás tus empaques listos para hacer brillar tu marca.</p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Escoge el producto</h3>
+        <p>Te enviamos el catálogo por WhatsApp con todas las opciones de bolsas, cajas y portacomidas.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Personaliza tu empaque</h3>
+        <p>Envíanos tu logo en formato editable y lo adaptamos a la referencia que escogiste.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Recibe en 3 días hábiles</h3>
+        <p>Después de aprobar el diseño, retira en punto o recibe el envío en tu ciudad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO -->
+  <section>
+    <span class="section-label">Clientes</span>
+    <h2 class="section-title">¿Para quién son nuestros empaques?</h2>
+    <p class="section-sub">Trabajamos con emprendedores y grandes marcas por igual.</p>
+    <div class="who-grid">
+      <span class="who-tag">🧑‍💼 Emprendedores</span>
+      <span class="who-tag">🍽️ Restaurantes</span>
+      <span class="who-tag">🛒 Tiendas físicas</span>
+      <span class="who-tag">💻 Tiendas online</span>
+      <span class="who-tag">👗 Boutiques</span>
+      <span class="who-tag">🥐 Panaderías y cafeterías</span>
+      <span class="who-tag">👔 Marcas de ropa</span>
+      <span class="who-tag">🏢 Pequeñas y medianas empresas</span>
+      <span class="who-tag">🍕 Pizzerías</span>
+      <span class="who-tag">🎁 Tiendas de regalos</span>
+    </div>
+  </section>
+
+  <!-- VS -->
+  <section>
+    <span class="section-label">Comparativa</span>
+    <h2 class="section-title">Nosotros vs. impresión tradicional</h2>
+    <p class="section-sub">La impresión digital cambia las reglas del juego para emprendedores y pymes.</p>
+    <div style="overflow-x: auto;">
+      <table class="vs-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="us">PaEmpakar ✅</th>
+            <th class="them">Impresión tradicional</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Cantidad mínima</td><td class="yes">Desde pocas unidades</td><td class="no">Miles de unidades</td></tr>
+          <tr><td>Tiempo de entrega</td><td class="yes">3 días hábiles</td><td class="no">Semanas</td></tr>
+          <tr><td>Colores sin restricción</td><td class="yes">Sí, full color CMYK</td><td class="no">Limitado por tintas</td></tr>
+          <tr><td>Materiales ecológicos</td><td class="yes">Sí, certificados</td><td class="no">Generalmente no</td></tr>
+          <tr><td>Sin costos ocultos</td><td class="yes">Precio transparente</td><td class="no">Costo de planchas extra</td></tr>
+          <tr><td>Accesible para pymes</td><td class="yes">Sí</td><td class="no">No</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <span class="section-label">Preguntas frecuentes</span>
+    <h2 class="section-title">Todo lo que necesitas saber</h2>
+    <p class="section-sub">Resolvemos tus dudas antes de hacer tu pedido.</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Cobran por cantidad de colores? <span class="arrow">+</span></button>
+        <div class="faq-a"><p>No. Usamos impresión digital CMYK que permite personalizar tus empaques con todos los colores que quieras sin costo adicional.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Cuál es la cantidad mínima de pedido? <span class="arrow">+</span></button>
+        <div class="faq-a"><p>Trabajamos desde bajas cantidades, ideales para emprendedores, hasta grandes producciones para empresas. Escríbenos y te cotizamos según tu necesidad.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Los empaques son aptos para alimentos? <span class="arrow">+</span></button>
+        <div class="faq-a"><p>Sí. Usamos tintas y materiales certificados para contacto directo con alimentos, garantizando seguridad y confianza para tus productos.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Cuánto tarda la producción? <span class="arrow">+</span></button>
+        <div class="faq-a"><p>El tiempo de entrega es de 3 días hábiles después de que apruebes el diseño final. Rápido y sin sorpresas.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Hacen envíos a todo Colombia? <span class="arrow">+</span></button>
+        <div class="faq-a"><p>Sí. Puedes retirar en nuestro punto o recibir el envío en tu ciudad a través de nuestras alianzas de transporte.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Qué necesito para hacer mi pedido? <span class="arrow">+</span></button>
+        <div class="faq-a"><p>Solo necesitas tu logo en formato editable (AI, PDF o PNG de alta resolución). Nuestro equipo se encarga del resto y te enviamos una prueba antes de producir.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <div class="cta-final">
+    <h2>¿Listo para empacar tu marca con estilo?</h2>
+    <p>Escríbenos ahora y recibe el catálogo completo con precios en minutos.</p>
+    <div class="cta-phones">
+      <a class="btn-primary" href="https://wa.me/573008718152" target="_blank" rel="noopener">
+        <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.532 5.862L0 24l6.29-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.655-.498-5.189-1.369L2 22l1.41-4.687A9.948 9.948 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        300 871 8152
+      </a>
+      <a class="btn-primary" href="https://wa.me/573185029354" target="_blank" rel="noopener">
+        <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.532 5.862L0 24l6.29-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.655-.498-5.189-1.369L2 22l1.41-4.687A9.948 9.948 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        318 502 9354
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <div class="footer-logo nav-logo">
+        <span class="pa">Pa</span><span class="em">Em</span><span class="ak">pa</span><span class="ar">kar</span>
+      </div>
+      <p style="margin-top: 0.4rem;">Empaques que dan valor a tu marca · paempakar.com</p>
+    </div>
+    <div class="footer-contact">
+      <a href="https://wa.me/573008718152" target="_blank" rel="noopener">📱 300 871 8152</a>
+      <a href="https://wa.me/573185029354" target="_blank" rel="noopener">📱 318 502 9354</a>
+      <a href="https://instagram.com/paempakar" target="_blank" rel="noopener">📸 @paempakar</a>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <div class="wa-float">
+    <a href="https://wa.me/573008718152" target="_blank" rel="noopener">
+      <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.532 5.862L0 24l6.29-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.655-.498-5.189-1.369L2 22l1.41-4.687A9.948 9.948 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      ¡Pedir ahora!
+    </a>
+  </div>
+
+  <script>
+    function toggleFaq(btn) {
+      const answer = btn.nextElementSibling;
+      const isOpen = btn.classList.contains('open');
+      document.querySelectorAll('.faq-q.open').forEach(b => {
+        b.classList.remove('open');
+        b.nextElementSibling.style.maxHeight = null;
+      });
+      if (!isOpen) {
+        btn.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    }
+  </script>
+</body>
+</html>
